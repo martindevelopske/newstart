@@ -1,8 +1,22 @@
 export const NavLinksData= [
-    {id:1,
-     navigation:"Home"},
-     {id:2,
-    navigation:"About"},
-    {id:3,
-    navigation:"Contact"}
+    {
+        id:1,
+        navigation:"About"
+    },
+     {
+        id:2,
+        navigation:"Services"
+    },
+    {
+        id:3,
+        navigation:"Works"
+    },
+    {
+        id:4,
+        navigation:"Testimonials"
+    },
+    {
+        id:5,
+        navigation:"Contact"
+    }
 ]
