@@ -5,7 +5,7 @@ import { WorkCard, WorkCards, WorkImage, WorkMain } from '../Styled/StyledWorkSe
 
 function WorkSection() {
   return (
-    <WorkMain>
+    <WorkMain id='work'>
     <StyledSectionHeader>
         Check out my <div>Work</div>
     </StyledSectionHeader>

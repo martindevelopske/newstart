@@ -6,7 +6,7 @@ import ServiceCard from './ServiceCard'
 
 function ServicesSection() {
   return (
-    <StyledServicesMain>
+    <StyledServicesMain id='services'>
         <StyledSectionHeader>
             My <div> Services</div>
         </StyledSectionHeader>

@@ -1,6 +1,5 @@
 
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import HomePage from './Pages/HomePage'
 
@@ -12,11 +11,11 @@ const theme={
 }
 function App() {
   return (
-    <BrowserRouter>
+    
     <ThemeProvider theme={theme}>
-    <HomePage />
+      <HomePage />
     </ThemeProvider>
-    </BrowserRouter>
+    
     
   )
 }

@@ -5,5 +5,5 @@ width:90%;
 height:1px;
 margin-top: 48px;
 margin-left: 5%;
-background-color: white;
-opacity: 30%;`
+background-color: rgba(255,255,255, 0.3);
+`

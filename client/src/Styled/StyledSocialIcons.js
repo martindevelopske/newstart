@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const SocialIconsHolder=styled.div`
 display:flex;
-flex-direction:column;
+flex-direction: ${(props) =>props.fx || "column"};
 justify-content:center;
-align-items:center;`
+align-items:center;
+`
 
 export const SocialIcon= styled.div`
 width:24px;

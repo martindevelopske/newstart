@@ -1,5 +1,6 @@
 import React from 'react'
 import ContactSection from '../components/ContactSection'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import HeroSection from '../components/HeroSection'
 import Separator from '../components/Separator'
@@ -20,6 +21,8 @@ function HomePage() {
     <Testimonials />
     <Separator />
     <ContactSection />
+    <Separator />
+    <Footer />
     </>
   )
 }

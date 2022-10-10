@@ -18,11 +18,13 @@ display:flex;
 flex-direction:column;
 width: 40%;
 margin: 16px;
-border: 2px solid green;
+border: 2px solid rgba(206, 205, 202, 0.4);
+border-radius: 10px;
 font-size: 12px;
 `
 
 export const TestimonialDescription=styled.div`
+margin: 10px;
 & div{
     color: ${(p)=>p.theme.colorPrimary}
 }`

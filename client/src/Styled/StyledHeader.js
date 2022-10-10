@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 export const StyledLogo= styled.div`
 margin-top:32px;
@@ -27,12 +27,17 @@ display: flex;
 flex-direction:row;
 justify-content: space-between;
 align-items: center;
-margin-bottom:32px;`
+width: 100%;
+margin-bottom:32px;
+position: sticky;
+top:0;
+background-color: rgba(33, 32, 30, 10);`
 
 export const StyledLink= styled(Link)`
 font-size: 14px;
 text-decoration: none;
 color: ${(p)=>p.theme.textColor};
-&>active {
-    color:${(p)=>p.theme.colorPrimary}
+
+&.active{
+    color: ${(p)=>p.theme.colorPrimary}
 }`;
