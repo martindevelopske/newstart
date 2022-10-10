@@ -2,7 +2,8 @@ import React from 'react'
 import { StyledSectionHeader } from '../Styled/StyledSectionHeader'
 import { ServicesIntro } from '../Styled/StyledServicesSection'
 import { WorkCard, WorkCards, WorkImage, WorkMain } from '../Styled/StyledWorkSection'
-
+import {FiSearch} from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 function WorkSection() {
   return (
     <WorkMain id='work'>
@@ -14,15 +15,24 @@ function WorkSection() {
         </ServicesIntro>
     <WorkCards>
         <WorkCard>
-          <WorkImage></WorkImage>
+          <WorkImage>
+          <div><a className="search" href="https://google.com" target="-blank"><FiSearch /></a></div>
+            <img src="./Images/pp1.jpg" alt='pic'></img>
+          </WorkImage>
           <p>company name</p>
         </WorkCard>
         <WorkCard>
-        <WorkImage></WorkImage>
+        <WorkImage>
+        <div><a className="search" href="https://google.com" target="-blank"><FiSearch /></a></div>
+        <img src="./Images/pp1.jpg" alt='pic'></img>
+        </WorkImage>
           <p>company name</p>
         </WorkCard>
         <WorkCard>
-        <WorkImage></WorkImage>
+        <WorkImage>
+        <div><a className="search" href="https://google.com" target="-blank"><FiSearch /></a></div>
+        <img src="./Images/pp1.jpg" alt='pic'></img>
+        </WorkImage>
           <p>company name</p>
         </WorkCard>
     </WorkCards>

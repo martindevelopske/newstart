@@ -9,14 +9,21 @@ margin: 32px;
 height: 500px;
 justify-content: space-around;
 align-items:center;
-;`
+;
+@media(max-width: ${(p)=>p.theme.mobile}){
+    flex-direction: column;
+    height: auto;
+}`
 
 export const ContactIntro=styled.div`
 display:flex;
 flex-direction:column;
 width: 40%;
 height:200px;
-justify-content: space-around;`
+justify-content: space-around;
+@media(max-width: ${(p)=>p.theme.mobile}){
+    width:90%;
+}`
 
 export const ContactForm=styled.form`
 border: 1px solid  ${(p)=>p.theme.fillColor};
@@ -33,5 +40,17 @@ height: 400px;
 }
 & button{
     margin-left: 25%;
+}
+& .name{
+    height: 20px;
+}
+& .email{
+    height: 20px;
+}
+& .message{
+    height: 64px;
+}
+@media(max-width: ${(p)=>p.theme.mobile}){
+    width:90%;
 }
 `

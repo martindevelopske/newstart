@@ -5,10 +5,7 @@ import { Link } from 'react-scroll'
 import { HeaderContainer, NavContainer, StyledLink, StyledLogo } from '../Styled/StyledHeader'
 //import Testimonials from './Testimonials'
  
-// const handleActive=()=>{
-//   alert("active")
-//   // document.querySelector('active').style.color="blue"
-// }
+
 function Header() {
   return (
     <>

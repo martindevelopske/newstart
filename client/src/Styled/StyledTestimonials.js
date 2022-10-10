@@ -21,7 +21,9 @@ margin: 16px;
 border: 2px solid rgba(206, 205, 202, 0.4);
 border-radius: 10px;
 font-size: 12px;
-`
+@media(max-width: ${(p)=>p.theme.mobile}){
+    width:90%;
+}`
 
 export const TestimonialDescription=styled.div`
 margin: 10px;

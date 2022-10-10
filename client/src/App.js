@@ -7,7 +7,9 @@ const theme={
   colorPrimary: "#00E6C4",
   bgColor: "#21201E",
   fillColor: "rgba(206, 205, 202, 0.06)",
-  textColor: "#DDE2EA"
+  textColor: "#DDE2EA",
+  mobile: "640px",
+  tablet: "962px"
 }
 function App() {
   return (

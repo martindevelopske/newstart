@@ -19,7 +19,7 @@ function Testimonials() {
             <span>I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat. <div>"</div></span>
             </TestimonialDescription>
             <TestimonialImage>
-                <img src="/" alt=''/>
+                <img src="./Images/pp1.jpg" alt=''/>
                 <p> hames kamau at Google.</p> 
             </TestimonialImage>
         </TestimonialCard>
@@ -29,7 +29,7 @@ function Testimonials() {
             <span>I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat. <div>"</div></span>
             </TestimonialDescription>
             <TestimonialImage>
-                <img src="/" alt=''/>
+                <img src="./Images/pp1.jpg" alt=''/>
                 <p> hames kamau at Google.</p> 
             </TestimonialImage>
         </TestimonialCard>
@@ -39,7 +39,7 @@ function Testimonials() {
             <span>I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat. <div>"</div></span>
             </TestimonialDescription>
             <TestimonialImage>
-                <img src="/" alt=''/>
+                <img src="./Images/pp1.jpg" alt=''/>
                 <p> hames kamau at Google.</p> 
             </TestimonialImage>
         </TestimonialCard>

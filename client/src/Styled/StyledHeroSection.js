@@ -1,4 +1,14 @@
 import styled from "styled-components";
+
+export const HeroMain=styled.div`
+display:flex;
+flex-direction: row;
+margin-left: 64px;
+@media (max-width: ${(p)=>p.theme.mobile}) {
+    flex-direction: column;
+    height: auto;
+}
+`
 export const StyledHerobox=styled.div`
 margin-top: 64px;
 margin-right: 20px;
@@ -24,14 +34,42 @@ align-items: center;
 & p{
     font-size: 16px;
     font-weight: 200px;
-}`
+}
+& .separator{
+    color: ${(p)=>p.theme.colorPrimary};
+    font-size: 24px;
+}
+@media(max-width: ${(p)=>p.theme.tablet}){
+    & li{
+        font-size: 20px;
+    }
+    & h1{
+        font-size: 42px;
+    }
+    & .separator{
+        color: ${(p)=>p.theme.colorPrimary};
+        font-size: 20px;
+    }
+
+}
+@media (max-width: ${(p)=>p.theme.mobile}) {
+    height: auto;
+    width: 90%;
+    & h1 {
+        font-size: 32px;
+    }
+    & li{
+        font-size: 18px;
+    }
+}
+`
 
 export const StyledImageHolder=styled.div`
 width:30%;
 height: 400px;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: space-around;
 align-items:center;
 & img{
     height: 250px;
@@ -51,13 +89,35 @@ align-items:center;
 }
 & p{
     text-decoration:none;
-}`
+}
+& .number{
+    color: white;
+}
+@media(max-width: ${(p)=>p.theme.tablet}){
+    height: 300px;
+    margin-top:90px;
+    margin-right:20px;
+    & img{
+        height: 200px;
+        width:200px;
+    }
+}
+@media(max-width:${(p)=>p.theme.mobile}){
+    width: 90%;
+    margin-top:32px;
+    height: auto;
+    & img{
+        height:150px;
+        width:150px;
+    }
+    & .socials{
+        flex-direction: row;
+    }
 
-export const HeroMain=styled.div`
-display:flex;
-flex-direction: row;
-margin-left: 64px;
+}
 `
+
+
 
 export const StyledSocialsHolder=styled.div`
 width: 7%;

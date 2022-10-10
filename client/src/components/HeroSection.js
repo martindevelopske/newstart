@@ -1,9 +1,9 @@
 import React from 'react'
 import { Icons } from '../Data/IconsData'
-import { HeroMain, StyledHerobox, StyledImageHolder, StyledSocialsHolder } from '../Styled/StyledHeroSection'
-import { SocialIcon } from '../Styled/StyledSocialIcons'
+import { HeroMain, StyledHerobox, StyledImageHolder } from '../Styled/StyledHeroSection'
+import { SocialIcon, SocialIconsHolder } from '../Styled/StyledSocialIcons'
 import Button from './Button'
-import SocialIcons from './SocialIcons'
+//import SocialIcons from './SocialIcons'
 
 function HeroSection() {
   return (
@@ -13,9 +13,9 @@ function HeroSection() {
       <div>
         <ul>
           <li> Web Designer</li>
-          /
+          <div className='separator'>/</div>
           <li> Web Developer</li>
-          &
+          <div className='separator'>&</div>
           <li> Digital Marketer</li>
         </ul>
       </div>
@@ -32,11 +32,11 @@ function HeroSection() {
         
         <div>
           <a href='mailto:martindevelopske@gmail.com' target="-blank"><h4>Martindevelopske@gmail.com</h4></a>
-          <a href='tel:+254703605544'> <p> Tel: +254703605544</p>
+          <a href='tel:+254703605544' className='number'> <p> Tel: +254703605544</p>
           </a>
         </div>
     </StyledImageHolder>
-    <StyledSocialsHolder >
+    <SocialIconsHolder >
     {Icons.map((prop) => {
       return (<a href={prop.link} target="-blank">
       <SocialIcon key={prop.id}>
@@ -45,7 +45,7 @@ function HeroSection() {
   </a> )
     })}
     
-    </StyledSocialsHolder>
+    </SocialIconsHolder>
     </HeroMain>
   )
 }

@@ -3,6 +3,9 @@ export const StyledServicesMain=styled.div`
 dislay: flex;
 flex-direction:column;
 margin:32px;
+@media(max-width: ${(p)=>p.theme.mobile}){
+    width:90%;
+}
 `
 
 export const ServicesIntro=styled.div`
@@ -21,6 +24,10 @@ background-color: ${(p)=>p.theme.fillColor};
 & >div{
     color: ${(p)=>p.theme.colorPrimary};
 };
+@media(max-width: ${(p)=>p.theme.mobile}){
+    heigth: auto;
+    
+}
 `
 
 export const CardsHolder=styled.div`
@@ -32,5 +39,11 @@ margin-top: 64px;
     flex: 0 1 40%;
     margin-left: 32px;
 } 
+@media(max-width: ${(p)=>p.theme.mobile}){
+    width:100%;
+    & *{
+        flex: 0 1 80%;
+    }
+}
 
 `

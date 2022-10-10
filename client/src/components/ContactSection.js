@@ -19,13 +19,13 @@ function ContactSection() {
           <ContactForm>
             <form>
               <div>
-              <input placeholder='Name' type="text"></input>
+              <input placeholder='Name' className="name" type="text"></input>
               </div>
               <div>
-              <input placeholder='Email' type='email'></input>
+              <input placeholder='Email' className="email" type='email'></input>
               </div>
               <div>
-              <input placeholder='Message' type="text"></input>
+              <input placeholder='Message' className="message" type="text"></input>
               </div>
               <div>
               <Button child="Send Message"></Button>

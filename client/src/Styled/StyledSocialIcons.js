@@ -5,6 +5,9 @@ display:flex;
 flex-direction: ${(props) =>props.fx || "column"};
 justify-content:center;
 align-items:center;
+@media(max-width: ${(p)=>p.theme.mobile}){
+    flex-direction: row;
+}
 `
 
 export const SocialIcon= styled.div`
