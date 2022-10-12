@@ -38,11 +38,14 @@ function HeroSection() {
     </StyledImageHolder>
     <SocialIconsHolder >
     {Icons.map((prop) => {
-      return (<a href={prop.link} target="-blank">
-      <SocialIcon key={prop.id}>
-      {prop.icon}
+      const {link, id,icon}=prop
+      return (
+      <SocialIcon key={id}>
+        <a href={link} target="-blank"> {icon} </a>
       </SocialIcon>
-  </a> )
+      
+     
+      )
     })}
     
     </SocialIconsHolder>

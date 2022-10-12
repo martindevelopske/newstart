@@ -14,4 +14,6 @@ export const SocialIcon= styled.div`
 width:24px;
 height:24px;
 margin: 10px;
-color: ${(p)=>p.theme.colorPrimary};`
+& a{
+    color: ${(p)=>p.theme.colorPrimary};
+}`

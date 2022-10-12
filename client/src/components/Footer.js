@@ -10,16 +10,15 @@ function Footer(){
         <FooterHolder>
             <p>  <AiOutlineCopyrightCircle />2022 Martin inc. All rights reserved.</p>
             <SocialIconsHolder fx="row">
-            {Icons.map((prop)=>{
-                return(
-                    <a href={prop.link} target="-blank">
-                        <SocialIcon key={prop.id}>
-                        {prop.icon}
-                    </SocialIcon>
-                    </a>
-                        
-                    
-                )
+            {Icons.map((prop) => {
+      const {link, id,icon}=prop
+      return (
+      <SocialIcon key={id}>
+        <a href={link} target="-blank"> {icon} </a>
+      </SocialIcon>
+      
+     
+      )
             })}
             </SocialIconsHolder>
          </FooterHolder>
