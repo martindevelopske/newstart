@@ -1,9 +1,24 @@
-import React from 'react'
+import React, {useRef} from 'react'
+import emailjs from '@emailjs/browser'
 import { ContactForm, ContactFormHolder, ContactIntro, ContactMain } from '../Styled/ContactStyled'
 import { StyledSectionHeader } from '../Styled/StyledSectionHeader'
 import Button from './Button'
 
+export const ContactUs=()=>{
+  
+}
 function ContactSection() {
+  const form =useRef();
+
+  const sendEmail=(e)=>{
+    e.preventDefault();
+
+    emailjs.sendForm("service_ge6uy12", "template_erynu56",form.current,"zRkkjL78ryGhy2pvo")
+    .then((result)=>{
+      console.log(result.text);
+    }, (error)=> console.log(error.text))
+    form.current.reset();
+  }
   return (
     <ContactMain id='contact'>
         <StyledSectionHeader>
@@ -17,18 +32,18 @@ function ContactSection() {
             </p>
           </ContactIntro>
           <ContactForm>
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div>
-              <input placeholder='Name' className="name" type="text"></input>
+              <input placeholder='Name' className="name" type="text" name='user_name'></input>
               </div>
               <div>
-              <input placeholder='Email' className="email" type='email'></input>
+              <input placeholder='Email' className="email" type='email' name='user_email'></input>
               </div>
               <div>
-              <input placeholder='Message' className="message" type="text"></input>
+              <input placeholder='Message' className="message" type="text" name='message'></input>
               </div>
               <div>
-              <Button child="Send Message"></Button>
+              <Button type='submit' onClick={sendEmail} child="Send Message" value='send'></Button>
               </div>
              
             </form>

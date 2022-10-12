@@ -25,7 +25,7 @@ justify-content: space-around;
     width:90%;
 }`
 
-export const ContactForm=styled.form`
+export const ContactForm=styled.div`
 border: 1px solid  ${(p)=>p.theme.fillColor};
 display: flex;
 flex-direction: column;
@@ -33,6 +33,7 @@ justify-content: space-around;
 width: 55%;
 height: 400px;
 & input{
+    color:white;
     margin: 16px;
     width: 90%;
     border: 1px solid rgba(206, 205, 202, 0.5);

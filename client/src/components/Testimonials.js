@@ -16,7 +16,7 @@ function Testimonials() {
         <TestimonialCard>
             <TestimonialDescription>
             <div>"</div>
-            <span>I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat. <div>"</div></span>
+            <p>I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat. <div>"</div></p>
             </TestimonialDescription>
             <TestimonialImage>
                 <img src="./Images/pp1.jpg" alt=''/>
@@ -26,7 +26,7 @@ function Testimonials() {
         <TestimonialCard>
             <TestimonialDescription>
             <div>"</div>
-            <span>I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat. <div>"</div></span>
+            <p>I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat. <div>"</div></p>
             </TestimonialDescription>
             <TestimonialImage>
                 <img src="./Images/pp1.jpg" alt=''/>
@@ -36,7 +36,7 @@ function Testimonials() {
         <TestimonialCard>
             <TestimonialDescription>
             <div>"</div>
-            <span>I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat. <div>"</div></span>
+            <p>I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat. <div>"</div></p>
             </TestimonialDescription>
             <TestimonialImage>
                 <img src="./Images/pp1.jpg" alt=''/>

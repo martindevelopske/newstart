@@ -27,8 +27,12 @@ font-size: 12px;
 
 export const TestimonialDescription=styled.div`
 margin: 10px;
+
 & div{
     color: ${(p)=>p.theme.colorPrimary}
+}
+& p{
+    font-size:13px;
 }`
 export const TestimonialImage=styled.div`
 display:flex;
@@ -42,4 +46,5 @@ flex-direction: row;
 }
 & p{
     font-style: italic;
+    font-weight: bold;
 }`

@@ -5,7 +5,7 @@ function ServiceCard({name,description,id,logo}) {
   return (
     <StyledServiceCard>
         <div>{logo}</div>
-        <p>{name}</p>
+        <h4>{name}</h4>
         <p>{description} </p>
     </StyledServiceCard>
   )
