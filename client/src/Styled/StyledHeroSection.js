@@ -12,11 +12,11 @@ margin-left: 64px;
 export const StyledHerobox=styled.div`
 margin-top: 64px;
 margin-right: 20px;
-width: 55%;
-height: 400px;
+width: 95%;
+height: auto;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: center;
 align-items: center;
 & h1 {
     font-size: 48px;
@@ -65,18 +65,11 @@ align-items: center;
 `
 
 export const StyledImageHolder=styled.div`
-width:30%;
-height: 400px;
+width:100%;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
 align-items:center;
-& img{
-    height: 250px;
-    width: 250px;
-    border: 2px solid ${(p)=>p.theme.colorPrimary};
-    border-radius: 125px;
-    object-fit: fill;
 }
 
 & h4{
@@ -94,13 +87,8 @@ align-items:center;
     color: white;
 }
 @media(max-width: ${(p)=>p.theme.tablet}){
-    height: 300px;
-    margin-top:90px;
+    margin-top:10px;
     margin-right:20px;
-    & img{
-        height: 200px;
-        width:200px;
-    }
 }
 @media(max-width:${(p)=>p.theme.mobile}){
     width: 90%;

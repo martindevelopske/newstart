@@ -5,7 +5,7 @@ import HomePage from './Pages/HomePage'
 
 const theme={
   colorPrimary: "#00E6C4",
-  bgColor: "#21201E",
+  bgColor: "#//21201E",//#21201E
   fillColor: "rgba(206, 205, 202, 0.06)",
   textColor: "#DDE2EA",
   mobile: "640px",

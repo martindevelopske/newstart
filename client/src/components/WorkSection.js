@@ -4,6 +4,7 @@ import { ServicesIntro } from '../Styled/StyledServicesSection'
 import { WorkCard, WorkCards, WorkImage, WorkMain } from '../Styled/StyledWorkSection'
 import {FiSearch} from 'react-icons/fi'
 import { Link } from 'react-router-dom'
+import SkillSection from './SkillSection'
 function WorkSection() {
   return (
     <WorkMain id='work'>
@@ -36,6 +37,7 @@ function WorkSection() {
           <p>company name</p>
         </WorkCard>
     </WorkCards>
+    <SkillSection />
     </WorkMain>
   )
 }

@@ -24,18 +24,20 @@ function HeroSection() {
         <Button child="Hire Me" onClick={()=>{alert("clicked")}}>
           
         </Button>
-      
-    </StyledHerobox>
-    <StyledImageHolder>
+        <StyledImageHolder>
+        {/* <div className='image'>
+        <img src='./Images/pp2.jpg' alt='pic'/>
         
-          <img src='./Images/pp1.jpg' alt='pic'/>
-        
+        </div> */}
+         
         <div>
           <a href='mailto:martindevelopske@gmail.com' target="-blank"><h4>Martindevelopske@gmail.com</h4></a>
           <a href='tel:+254703605544' className='number'> <p> Tel: +254703605544</p>
           </a>
         </div>
     </StyledImageHolder>
+    </StyledHerobox>
+    
     <SocialIconsHolder >
     {Icons.map((prop) => {
       const {link, id,icon}=prop
