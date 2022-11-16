@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SkillsContainer=styled.div`
-margin-top:32px;
+margin:32px;
 width:90%;
 height: auto;
 
@@ -16,14 +16,18 @@ height: auto;
 }
 & .holder{
     width:70%;
-    margin-left:25%;    
+    margin-left:25%; 
+    margin-top: 48px;   
     & div{
         display: flex;
         flex-direction:row;
         flex-wrap:wrap;
     }
     
-}`
+}
+@media(max-width:${(p)=>p.theme.mobile}){
+    margin:16px;
+})`
 export const StyledIcon=styled.img`
 width: 64px;
 margin:15px;

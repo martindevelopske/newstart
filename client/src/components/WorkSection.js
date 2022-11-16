@@ -3,8 +3,10 @@ import { StyledSectionHeader } from '../Styled/StyledSectionHeader'
 import { ServicesIntro } from '../Styled/StyledServicesSection'
 import { WorkCard, WorkCards, WorkImage, WorkMain } from '../Styled/StyledWorkSection'
 import {FiSearch} from 'react-icons/fi'
-import { Link } from 'react-router-dom'
 import SkillSection from './SkillSection'
+import CardButton from './CardButton'
+import { StyledCardButton } from '../Styled/StyledCardButton'
+import {Link} from 'react-scroll'
 function WorkSection() {
   return (
     <WorkMain id='work'>
@@ -21,6 +23,12 @@ function WorkSection() {
             <img src="./Images/pp1.jpg" alt='pic'></img>
           </WorkImage>
           <p>company name</p>
+          Stack:
+          <a href='http://google.com' target="blank">
+          <StyledCardButton bg={(p)=>p.theme.colorPrimary}>
+            visit site <i className="fa-solid fa-up-right-from-square"></i>
+          </StyledCardButton>
+          </a>         
         </WorkCard>
         <WorkCard>
         <WorkImage>
@@ -28,6 +36,13 @@ function WorkSection() {
         <img src="./Images/pp1.jpg" alt='pic'></img>
         </WorkImage>
           <p>company name</p>
+          Stack:
+          <a href='http://google.com' target="blank">
+          
+          <StyledCardButton bg={(p)=>p.theme.colorPrimary}>
+            visit site <i className="fa-solid fa-up-right-from-square"></i>
+          </StyledCardButton>
+          </a>
         </WorkCard>
         <WorkCard>
         <WorkImage>
@@ -35,9 +50,16 @@ function WorkSection() {
         <img src="./Images/pp1.jpg" alt='pic'></img>
         </WorkImage>
           <p>company name</p>
+          Stack:
+          <a href='http://google.com' target="blank">
+          <StyledCardButton bg={(p)=>p.theme.colorPrimary}>
+            
+            visit site <i className="fa-solid fa-up-right-from-square"></i>
+          </StyledCardButton>   
+          </a>
         </WorkCard>
     </WorkCards>
-    <SkillSection />
+    {/* <SkillSection /> */}
     </WorkMain>
   )
 }

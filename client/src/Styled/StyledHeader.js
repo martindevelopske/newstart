@@ -20,7 +20,11 @@ display:flex;
 flex-direction:row;
 justify-content: space-between;
 align-items:center;
-`
+
+@media(max-width:${(p)=>p.theme.mobile}){
+    display:none;
+    
+})`
 
 export const HeaderContainer=styled.div`
 display: flex;
@@ -31,7 +35,11 @@ width: 100%;
 margin-bottom:32px;
 position: sticky;
 top:0;
-background-color: rgba(33, 32, 30, 10);`
+background-color: rgba(33, 32, 30, 10);
+@media(max-width:${(p)=>p.theme.mobile}){
+    justify-content:center;
+    margin-bottom:16px;
+})`
 
 export const StyledLink= styled(Link)`
 font-size: 14px;

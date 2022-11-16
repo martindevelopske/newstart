@@ -1,11 +1,14 @@
 import styled from 'styled-components'
 
 export const WorkMain=styled.div`
-margin:32px;`
+margin:32px;
+@media(max-width:${(p)=>p.theme.mobile}){
+    margin:16px;
+})`
 
 export const WorkCard=styled.div`
 width: 170px;
-height: 200px;
+height: 230px;
 margin: 16px;
 display: flex;
 flex-direction: column;

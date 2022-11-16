@@ -1,6 +1,9 @@
 import styled from "styled-components";
 export const ContactMain=styled.div`
 margin: 32px;
+@media(max-width:${(p)=>p.theme.mobile}){
+margin:16px;
+})
 `
 export const ContactFormHolder=styled.div`
 display:flex;
@@ -13,6 +16,7 @@ align-items:center;
 @media(max-width: ${(p)=>p.theme.mobile}){
     flex-direction: column;
     height: auto;
+    justify-content:space-between;
 }`
 
 export const ContactIntro=styled.div`
@@ -32,26 +36,49 @@ flex-direction: column;
 justify-content: space-around;
 width: 55%;
 height: 400px;
-& input{
-    color:white;
+& .message{
+    height: 80px;
+    color: black;
+    
     margin: 16px;
     width: 90%;
     border: 1px solid rgba(206, 205, 202, 0.5);
     background-color: ${(p)=>p.theme.bgColor};
-}
-& button{
-    margin-left: 25%;
+    overflow: wrap;
+    overflow-wrap: break-word;
+
 }
 & .name{
     height: 20px;
+    color:black;
+    margin: 16px;
+    width: 90%;
+    border: 1px solid rgba(206, 205, 202, 0.5);
+    background-color: ${(p)=>p.theme.bgColor};
+
 }
 & .email{
     height: 20px;
+    color: black;
+    margin: 16px;
+    width: 90%;
+    border: 1px solid rgba(206, 205, 202, 0.5);
+    background-color: ${(p)=>p.theme.bgColor};
+
 }
-& .message{
-    height: 64px;
-}
+
 @media(max-width: ${(p)=>p.theme.mobile}){
     width:90%;
+    & button{
+        margin-left: 25%;
+    }
 }
+@media(max-width: ${(p)=>p.theme.tablet}){
+    width:80%;
+    & button{
+        margin-left: 30%;
+    }
+}
+
+
 `

@@ -7,6 +7,8 @@ margin-left: 64px;
 @media (max-width: ${(p)=>p.theme.mobile}) {
     flex-direction: column;
     height: auto;
+    margin-left:32px;
+    
 }
 `
 export const StyledHerobox=styled.div`
@@ -55,8 +57,10 @@ align-items: center;
 @media (max-width: ${(p)=>p.theme.mobile}) {
     height: auto;
     width: 90%;
+    margin-top:24px;
+    
     & h1 {
-        font-size: 32px;
+        font-size: 24px;
     }
     & li{
         font-size: 18px;

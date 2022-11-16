@@ -34,16 +34,16 @@ function ContactSection() {
           <ContactForm>
             <form ref={form} onSubmit={sendEmail}>
               <div>
-              <input placeholder='Name' className="name" type="text" name='user_name'></input>
+              <input placeholder='Name' className="input name" type="text" name='user_name'></input>
               </div>
               <div>
-              <input placeholder='Email' className="email" type='email' name='user_email'></input>
+              <input placeholder='Email' className="input email" type='email' name='user_email'></input>
               </div>
               <div>
-              <input placeholder='Message' className="message" type="text" name='message'></input>
+              <textarea placeholder='Message' className="input message" type="text" name='message'></textarea>
               </div>
               <div>
-              <Button type='submit' onClick={sendEmail} child="Send Message" value='send'></Button>
+              <Button type='submit' onClick={sendEmail} child="Send Message" value='send'></Button> 
               </div>
              
             </form>

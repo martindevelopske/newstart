@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import { Icons } from '../Data/IconsData'
 import { HeroMain, StyledHerobox, StyledImageHolder } from '../Styled/StyledHeroSection'
 import { SocialIcon, SocialIconsHolder } from '../Styled/StyledSocialIcons'
@@ -21,9 +22,10 @@ function HeroSection() {
       </div>
       
         <p>I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat.</p>
-        <Button child="Hire Me" onClick={()=>{alert("clicked")}}>
-          
+        <Link to='contact'>
+        <Button child="Hire Me">
         </Button>
+        </Link>
         <StyledImageHolder>
         {/* <div className='image'>
         <img src='./Images/pp2.jpg' alt='pic'/>
@@ -32,7 +34,7 @@ function HeroSection() {
          
         <div>
           <a href='mailto:martindevelopske@gmail.com' target="-blank"><h4>Martindevelopske@gmail.com</h4></a>
-          <a href='tel:+254703605544' className='number'> <p> Tel: +254703605544</p>
+          <a href='tel:+254703605544' className='number'> <p> Tel: +254703605544 🤙 </p>
           </a>
         </div>
     </StyledImageHolder>

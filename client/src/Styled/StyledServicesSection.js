@@ -5,6 +5,7 @@ flex-direction:column;
 margin:32px;
 @media(max-width: ${(p)=>p.theme.mobile}){
     width:90%;
+    margin:24px;
 }
 `
 
@@ -12,6 +13,9 @@ export const ServicesIntro=styled.div`
 font-size:14px;
 width:50%;
 margin-top:16px;
+@media(max-width:${(p)=>p.theme.mobile}){
+    width:90%;
+})
 `
 export const StyledServiceCard=styled.div`
 margin:16px;
@@ -26,6 +30,7 @@ background-color: ${(p)=>p.theme.fillColor};
 };
 @media(max-width: ${(p)=>p.theme.mobile}){
     heigth: auto;
+    margin:8px;
     
 }
 `

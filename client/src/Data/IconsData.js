@@ -5,11 +5,11 @@ export const Icons= [
     icon: <BsTwitter />,
     link: "https://twitter.com/m_devv"
     },
-    {
-        id:2,
-        icon: <AiFillInstagram />,
-        link: "https://www.instagram.com/_m.a.teo/"
-    },
+    // {
+    //     id:2,
+    //     icon: <AiFillInstagram />,
+    //     link: "https://www.instagram.com/_m.a.teo/"
+    // },
     {
         id:3,
         icon: <AiFillLinkedin />,

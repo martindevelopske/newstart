@@ -27,4 +27,4 @@ function ServicesSection() {
   )
 }
 
-export default ServicesSection
+export default ServicesSection;
