@@ -3,50 +3,65 @@ export const StyledProjectsMain=styled.div`
 margin:32px;
 & .holder{
     width:100%;
+    height:auto;
     display:flex;
     flex-direction:row;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
-    border:2px solid red;
+    flex-wrap:wrap;
     
 }
 @media(max-width:${(p)=>p.theme.tablet}){
     & .holder{
-    flex-direction:row;
-    border:2px solid blue;
+    flex-direction: row;
     height:auto;
     }
 }
 @media(max-width:${(p)=>p.theme.mobile}){
     & .holder{
     flex-direction:column;
-    border:2px solid white;
     }
-})
+}
 `
 export const ProjectCard=styled.div`
-height:200px;
+height:auto;
+background-color:${p=>p.theme.fillColor};
 width: 30%;
 margin: 32px;
-border: 1px solid green;
+border: none;
+border-radius:20px;
 
 @media(max-width:${(p)=>p.theme.tablet}){
-    width: 70%;
-    margin:8px;
+    width: 30%;
+    margin:4px;
     height:auto;
-    border:2px solid grey;
     height:auto;
-    flex-wrap:wrap;
+    
 }
 @media(max-width:${(p)=>p.theme.mobile}){
-    border:2px solid blue;
     height:auto;
     width:80%;
 }
-& img{
+& .image{
     width:100%;
     height:150px;
+    border-top-right-radius:20px;
+    border-top-left-radius:20px;
 };
-
-
+`
+export const StyledStackHolder=styled.div`
+display:flex;
+flex-direction:row;
+width:90%;
+height: 30px;
+`
+export const StyledStackIcon=styled.img`
+width:15%;
+@media(max-width:${p=>p.theme.tablet}){
+width:20%;
+}
+@media(max-width:${p=>p.theme.mobile}){
+    width:10%;
+    }
+;
 `

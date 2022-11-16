@@ -14,6 +14,7 @@ justify-content: space-around;
 align-items:center;
 ;
 @media(max-width: ${(p)=>p.theme.mobile}){
+    margin:8px;
     flex-direction: column;
     height: auto;
     justify-content:space-between;
@@ -68,7 +69,7 @@ height: 400px;
 }
 
 @media(max-width: ${(p)=>p.theme.mobile}){
-    width:90%;
+    width:95%;
     & button{
         margin-left: 25%;
     }

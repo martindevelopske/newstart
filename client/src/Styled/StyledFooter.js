@@ -11,9 +11,10 @@ margin: 8px;
 export const StyledEnd=styled.div`
 font-size:12px;
 margin-left:40%;
+margin-bottom:16px;
 @media(max-width:${(p)=>p.theme.tablet}){
     margin-left:35%;
 }
 @media(max-width:${(p)=>p.theme.mobile}){
-    margin-left:30%;
+    margin-left:22%;
 }`
