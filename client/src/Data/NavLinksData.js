@@ -1,27 +1,27 @@
 export const NavLinksData= [
     {
         id:1,
-        navigation:"/About",
+        navigation:"about",
         name: "About"
     },
      {
         id:2,
-        navigation:"/Services",
-        name: "Servies"
+        navigation:"services",
+        name: "Services"
     },
     {
         id:3,
-        navigation:"/Works",
+        navigation:"works",
         name: "Works"
     },
     {
         id:4,
-        navigation:"/Testimonials",
+        navigation:"testimonials",
         name: "Testimonials"
     },
     {
         id:5,
-        navigation:"/Contact",
+        navigation:"contact",
         name: "Contact"
     }
 ]

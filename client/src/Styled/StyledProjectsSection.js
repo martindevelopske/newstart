@@ -12,6 +12,7 @@ margin:32px;
     
 }
 @media(max-width:${(p)=>p.theme.tablet}){
+    margin:16px;
     & .holder{
     flex-direction: row;
     height:auto;
@@ -32,15 +33,15 @@ border: none;
 border-radius:20px;
 
 @media(max-width:${(p)=>p.theme.tablet}){
-    width: 30%;
-    margin:4px;
+    width: 35%;
+    margin:8px;
     height:auto;
     height:auto;
     
 }
 @media(max-width:${(p)=>p.theme.mobile}){
     height:auto;
-    width:80%;
+    width:60%;
 }
 & .image{
     width:100%;

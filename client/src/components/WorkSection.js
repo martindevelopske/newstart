@@ -23,7 +23,7 @@ function WorkSection() {
             <img src="./Images/pp1.jpg" alt='pic'></img>
           </WorkImage>
           <p>company name</p>
-          Stack:
+          
           <a href='http://google.com' target="blank">
           <StyledCardButton bg={(p)=>p.theme.colorPrimary}>
             visit site <i className="fa-solid fa-up-right-from-square"></i>
@@ -36,7 +36,7 @@ function WorkSection() {
         <img src="./Images/pp1.jpg" alt='pic'></img>
         </WorkImage>
           <p>company name</p>
-          Stack:
+          
           <a href='http://google.com' target="blank">
           
           <StyledCardButton bg={(p)=>p.theme.colorPrimary}>
@@ -50,7 +50,7 @@ function WorkSection() {
         <img src="./Images/pp1.jpg" alt='pic'></img>
         </WorkImage>
           <p>company name</p>
-          Stack:
+         :
           <a href='http://google.com' target="blank">
           <StyledCardButton bg={(p)=>p.theme.colorPrimary}>
             

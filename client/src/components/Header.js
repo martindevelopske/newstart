@@ -1,12 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-scroll'
+import { Icons } from '../Data/IconsData';
 
-//import { NavLinksData } from '../Data/NavLinksData'
-import { HeaderContainer, NavContainer, StyledLink, StyledLogo } from '../Styled/StyledHeader'
+import { NavLinksData } from '../Data/NavLinksData'
+import { HeaderContainer, NavContainer, NavToggle, StyledLink, StyledLogo, StyledMobileMenu } from '../Styled/StyledHeader'
+import { SocialIcon, SocialIconsHolder } from '../Styled/StyledSocialIcons';
 //import Testimonials from './Testimonials'
- 
+ //import {GrMenu} from 'react-icons/gr'
 
 function Header() {
+  const [menu,setmenu]=useState(false);
+  const [button,setButton]=useState(<i class="fa fa-bars" aria-hidden="true"></i>)
+  const handleToggle=()=>{
+    if(!menu){
+      setmenu(true);
+      setButton(<i class="fa fa-times" aria-hidden="true"></i>);
+    } else {
+      setmenu(false);
+      setButton(<i class="fa fa-bars" aria-hidden="true"></i>);
+    }
+   
+  }
   return (
     <>
     <HeaderContainer>
@@ -27,7 +41,29 @@ function Header() {
           <StyledLink to='contact' smooth={true} offset={-100} duration={500} spy={true} activeClass='active'>Contact</StyledLink>
            
         </NavContainer>
+        <NavToggle onClick={handleToggle}>
+        {/* <i class="fa fa-times" aria-hidden="true"></i> */}
+        {button}
+        </NavToggle>
+        
     </HeaderContainer>
+    {menu ? 
+    <>
+    <StyledMobileMenu>
+          {NavLinksData.map((link)=>{
+            return(
+              
+              <Link to={link.navigation} smooth={true} offset={-100} duration={600} spy={true} activeClass='active' onClick={()=>setmenu(false)}>
+                  <div>
+                  {link.name}
+                  </div>
+                  </Link>
+              )
+          })}
+        </StyledMobileMenu>
+        
+        </>: "" }
+    
     </>
   )
 }
