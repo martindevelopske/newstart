@@ -36,6 +36,10 @@ align-items: center;
 & p{
     font-size: 16px;
     font-weight: 200px;
+    
+}
+& .intro{
+    width:70%;
 }
 & .separator{
     color: ${(p)=>p.theme.colorPrimary};

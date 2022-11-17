@@ -16,8 +16,9 @@ function Header() {
       setmenu(true);
       setButton(<i class="fa fa-times" aria-hidden="true"></i>);
     } else {
-      setmenu(false);
       setButton(<i class="fa fa-bars" aria-hidden="true"></i>);
+      setmenu(false);
+      
     }
    
   }
@@ -53,7 +54,10 @@ function Header() {
           {NavLinksData.map((link)=>{
             return(
               
-              <Link to={link.navigation} smooth={true} offset={-100} duration={600} spy={true} activeClass='active' onClick={()=>setmenu(false)}>
+              <Link to={link.navigation} smooth={true} offset={-100} duration={600} spy={true} activeClass='active' onClick={()=>{
+                setmenu(false)
+                setButton(<i class="fa fa-bars" aria-hidden="true"></i>)
+              }}>
                   <div>
                   {link.name}
                   </div>

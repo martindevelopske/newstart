@@ -9,16 +9,25 @@ display:flex;
 &>div {
 font-size: 32px;
 color: ${(props)=>props.theme.colorPrimary};
-
+margin-left: -20px;
 }
 @media(max-width:${p=>p.theme.mobile}){
     margin-left:16px;
+    &>div{
+        margin-left:0px;
+    }
+}
+@media(max-width:${p=>p.theme.tablet}){
+    &>div{
+        margin-left:0px;
+    }
 }`
 
 export const NavContainer=styled.div`
 margin-top:32px;
-margin-right:32px;
-width: 300px;
+margin-right:64px;
+
+width: 400px;
 display:flex;
 flex-direction:row;
 justify-content: space-between;

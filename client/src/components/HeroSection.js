@@ -21,7 +21,7 @@ function HeroSection() {
         </ul>
       </div>
       
-        <p>I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat.</p>
+        <p className='intro'>I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat.</p>
         <Link to='contact'>
         <Button child="Hire Me">
         </Button>

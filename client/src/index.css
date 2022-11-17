@@ -16,7 +16,16 @@ body {
 *{
   font-family: 'Rubik', 'sans-serif';
   font-weight: 200;
+  margin-left:10px;
+  margin-right:20px;
 }
+  @media only screen and (max-width: 962px) {
+    * {
+      margin-left:0px;
+      margin-right:0px;
+    }
+  }
+
 * p{
   font-family: 'Work Sans', sans-serif;
   font-size: 14px;
