@@ -1,7 +1,7 @@
 export const NavLinksData= [
     {
         id:1,
-        navigation:"about",
+        navigation:"hero",
         name: "About"
     },
      {

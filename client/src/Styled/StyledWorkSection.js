@@ -45,7 +45,8 @@ height: 170px;
     color: ${(p)=>p.theme.colorPrimary};
 }
 & img{
-    max-width:100%;
+    width:170px;
+    height:170px;
 }
 &:hover{
     opacity:0.5;

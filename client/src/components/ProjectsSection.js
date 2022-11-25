@@ -6,7 +6,7 @@ import { ProjectsData } from '../Data/ProjectsData'
 import { StyledCardButton } from '../Styled/StyledCardButton'
 import { ProjectCard, StyledProjectsMain, StyledStackHolder, StyledStackIcon } from '../Styled/StyledProjectsSection'
 import { StyledSectionHeader, StyledSkillSectionHeader } from '../Styled/StyledSectionHeader'
-
+import Roll from 'react-reveal/Roll';
 function ProjectsSection() {
   return (
     <>
@@ -18,10 +18,11 @@ function ProjectsSection() {
     <div className='holder'>
     {ProjectsData.map((item)=>{
         return(
-          <ProjectCard key={item.id}>
+          
+                  <ProjectCard key={item.id}>
         <img src={item.img} alt='' className='image'></img>
        
-        {/* array that should map throught the stack*/}
+       
         <br></br>
         <p>{item.name}</p>
         stack:
@@ -32,13 +33,15 @@ function ProjectsSection() {
                
     )})}
           </StyledStackHolder>
-        <a href={item.link}>
+        <a href={item.link} target=".blank">
         <StyledCardButton bg={p=>p.theme.colorPrimary}>Visit site<i class="fa-solid fa-up-right-from-square"></i></StyledCardButton>
         </a>
-        <a href={item.github}>
+        <a href={item.github} target=".blank">
         <StyledCardButton bg="none" color="black"> Github <i class="fa-brands fa-github"></i></StyledCardButton>
         </a>
       </ProjectCard>
+         
+  
         )
       })}
     </div> 

@@ -2,6 +2,7 @@ import {SiMarketo }from 'react-icons/si'
 import {MdOutlineDesignServices} from 'react-icons/md'
 import { MdDeveloperMode } from 'react-icons/md'
 import {IoMdSettings} from 'react-icons/io'
+import {GoTelescope} from 'react-icons/go'
 export const ServicesData=[
     {id:1,
     name: "Design",
@@ -13,12 +14,18 @@ export const ServicesData=[
     logo: <MdDeveloperMode />,
     description: "I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat."
 },
+
 {id:3,
+    name:"SEO",
+    logo: <GoTelescope />,
+    description: "I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat."
+},
+{id:4,
     name:"Digital Marketing",
     logo: <SiMarketo />,
     description: "I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat."
 },
-{id:4,
+{id:5,
     name:"Maintenance and Support",
     logo: <IoMdSettings />,
     description: "I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat."

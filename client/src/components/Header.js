@@ -54,7 +54,7 @@ function Header() {
           {NavLinksData.map((link)=>{
             return(
               
-              <Link to={link.navigation} smooth={true} offset={-100} duration={600} spy={true} activeClass='active' onClick={()=>{
+              <Link to={link.navigation} smooth={true} offset={-80} duration={600} spy={true} activeClass='active' onClick={()=>{
                 setmenu(false)
                 setButton(<i class="fa fa-bars" aria-hidden="true"></i>)
               }}>

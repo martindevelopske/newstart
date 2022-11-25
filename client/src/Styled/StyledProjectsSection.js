@@ -58,6 +58,7 @@ height: 30px;
 `
 export const StyledStackIcon=styled.img`
 width:15%;
+margin-right:3px;
 @media(max-width:${p=>p.theme.tablet}){
 width:14%;
 }
