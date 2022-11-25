@@ -32,6 +32,13 @@ margin: 32px;
 border: none;
 border-radius:20px;
 
+& .image{
+    margin-left:0px;
+    width:100%;
+    height:150px;
+    border-top-right-radius:20px;
+    border-top-left-radius:20px;
+};
 @media(max-width:${(p)=>p.theme.tablet}){
     width: 35%;
     margin:8px;
@@ -43,22 +50,18 @@ border-radius:20px;
     height:auto;
     width:60%;
 }
-& .image{
-    width:100%;
-    height:150px;
-    border-top-right-radius:20px;
-    border-top-left-radius:20px;
-};
+
 `
 export const StyledStackHolder=styled.div`
 display:flex;
 flex-direction:row;
 width:90%;
 height: 30px;
+margin-left:0px;
 `
 export const StyledStackIcon=styled.img`
-width:15%;
-margin-right:3px;
+width:14%;
+margin-right:2px;
 @media(max-width:${p=>p.theme.tablet}){
 width:14%;
 }

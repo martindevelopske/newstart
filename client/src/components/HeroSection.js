@@ -1,14 +1,20 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import { Icons } from '../Data/IconsData'
-import { HeroMain, StyledHerobox, StyledImageHolder } from '../Styled/StyledHeroSection'
+import { HeroMain, HeroText, StyledHerobox, StyledImageHolder } from '../Styled/StyledHeroSection'
 import { SocialIcon, SocialIconsHolder } from '../Styled/StyledSocialIcons'
 import Button from './Button'
 //import SocialIcons from './SocialIcons'
-
+import Rotate from 'react-reveal/Rotate'
 function HeroSection() {
   return (
     <HeroMain id='hero'>
+      <Rotate bottom right>
+      <HeroText>
+        Turning Ideas into real projects.
+      </HeroText>
+      </Rotate>
+      
     <StyledHerobox>
       <h1> I'm Martin Ndung'u</h1>
       <div>
@@ -21,7 +27,15 @@ function HeroSection() {
         </ul>
       </div>
       
-        <p className='intro'>I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat.</p>
+        <p className='intro'>I help businesses grow by crafting amazing websites and web experiences.
+      
+        <p>
+        This portfolio is a representation of all I have learned and accomplished as a web developer and also a computer science student.
+        </p>
+        <p>
+        I am currently <div>available for freelance work</div>  so If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat.
+        </p>
+         </p>
         <Link to='contact'>
         <Button child="Hire Me">
         </Button>
@@ -32,8 +46,8 @@ function HeroSection() {
         
         </div> */}
          
-        <div>
-          <a href='mailto:martindevelopske@gmail.com' target="-blank"><h4>Martindevelopske@gmail.com</h4></a>
+        <div className='heroContact'>
+          <a href='mailto:martindevelopske@gmail.com' target="-blank"><h6>Martindevelopske@gmail.com</h6></a>
           <a href='tel:+254703605544' className='number'> <p> Tel: +254703605544 🤙 </p>
           </a>
         </div>

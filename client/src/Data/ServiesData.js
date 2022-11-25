@@ -15,7 +15,7 @@ export const ServicesData=[
     description: "I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat."
 },
 
-{id:3,
+{id:3,  
     name:"SEO",
     logo: <GoTelescope />,
     description: "I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat."

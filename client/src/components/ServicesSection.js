@@ -3,7 +3,7 @@ import { ServicesData } from '../Data/ServiesData'
 import { StyledSectionHeader } from '../Styled/StyledSectionHeader'
 import { CardsHolder, ServicesIntro, StyledServicesMain } from '../Styled/StyledServicesSection'
 import ServiceCard from './ServiceCard'
-
+import Slide from 'react-reveal/Slide'
 function ServicesSection() {
   return (
     <StyledServicesMain id='services'>
@@ -11,15 +11,18 @@ function ServicesSection() {
             My <div> Services</div>
         </StyledSectionHeader>
         <ServicesIntro>
-        I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat.
+        My main goal being crafting amazing web expiriences, all that is done 
         </ServicesIntro>
         <CardsHolder>
             {ServicesData.map((props)=>{
                 const {name,description,logo,id}= props;
                 return(
-                    <ServiceCard name={name} description={description} logo={logo} id={id} key={id}>
+                    <Slide left>
+                        <ServiceCard name={name} description={description} logo={logo} id={id} key={id}>
                         
-                    </ServiceCard>
+                        </ServiceCard>
+                    </Slide>
+                    
                 )
             })}
         </CardsHolder>

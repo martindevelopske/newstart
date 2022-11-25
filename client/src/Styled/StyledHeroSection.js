@@ -1,15 +1,27 @@
 import styled from "styled-components";
 
+
 export const HeroMain=styled.div`
 display:flex;
 flex-direction: row;
-margin-left: 64px;
+margin-left: 16px;
 @media (max-width: ${(p)=>p.theme.mobile}) {
     flex-direction: column;
     height: auto;
     margin-left:32px;
     
 }
+`
+export const HeroText=styled.div`
+font-size: 1.0rem;
+color: ${(p)=>p.theme.colorPrimary};
+width: 3%;
+height: auto;
+margin-top:100px;
+writing-mode: vertical-rl;
+display:flex;
+justify-content:center;
+
 `
 export const StyledHerobox=styled.div`
 margin-top: 64px;
@@ -45,6 +57,10 @@ align-items: center;
     color: ${(p)=>p.theme.colorPrimary};
     font-size: 24px;
 }
+& div{
+    color: ${p=>p.theme.colorPrimary}
+}
+
 @media(max-width: ${(p)=>p.theme.tablet}){
     & li{
         font-size: 20px;
@@ -80,8 +96,10 @@ justify-content: space-around;
 align-items:center;
 }
 
-& h4{
-    color:${(p)=>p.theme.colorPrimary}
+& h6{
+    font-size:1.05rem;
+    color:${(p)=>p.theme.colorPrimary};
+    margin-bottom: 0px;
 } 
 & a{
     text-decoration: none;

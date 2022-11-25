@@ -13,11 +13,13 @@ export const ServicesIntro=styled.div`
 font-size:14px;
 width:50%;
 margin-top:16px;
+margin-bottom: 16px;
 @media(max-width:${(p)=>p.theme.mobile}){
     width:90%;
 })
 `
 export const StyledServiceCard=styled.div`
+width:100%;
 margin:16px;
 border-top-left-radius: 30px;
 display: flex;

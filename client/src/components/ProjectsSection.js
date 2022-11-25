@@ -7,6 +7,7 @@ import { StyledCardButton } from '../Styled/StyledCardButton'
 import { ProjectCard, StyledProjectsMain, StyledStackHolder, StyledStackIcon } from '../Styled/StyledProjectsSection'
 import { StyledSectionHeader, StyledSkillSectionHeader } from '../Styled/StyledSectionHeader'
 import Roll from 'react-reveal/Roll';
+import { ServicesIntro } from '../Styled/StyledServicesSection'
 function ProjectsSection() {
   return (
     <>
@@ -15,6 +16,9 @@ function ProjectsSection() {
     <StyledSectionHeader>
         Here are some of my <div>Projects:</div>
     </StyledSectionHeader>
+    <ServicesIntro>
+      Over the past two years as a developer, I've done so many projects during my learning process. Here are some few outstanding projects that you can view:
+    </ServicesIntro>
     <div className='holder'>
     {ProjectsData.map((item)=>{
         return(
