@@ -16,7 +16,7 @@ function ServicesSection() {
         <CardsHolder>
             {ServicesData.map((props)=>{
                 const {name,description,logo,id}= props;
-                return(
+                return( 
                     <Slide left>
                         <ServiceCard name={name} description={description} logo={logo} id={id} key={id}>
                         

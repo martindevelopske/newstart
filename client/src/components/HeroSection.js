@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import { Icons } from '../Data/IconsData'
 import { HeroMain, HeroText, StyledHerobox, StyledImageHolder } from '../Styled/StyledHeroSection'
-import { SocialIcon, SocialIconsHolder } from '../Styled/StyledSocialIcons'
+import { SocialIcon, SocialIconsHolder, SocialIconsHolderFooter } from '../Styled/StyledSocialIcons'
 import Button from './Button'
 //import SocialIcons from './SocialIcons'
 import Rotate from 'react-reveal/Rotate'
@@ -11,7 +11,7 @@ function HeroSection() {
     <HeroMain id='hero'>
       <Rotate bottom right>
       <HeroText>
-        Turning Ideas into real projects.
+        Turning Ideas into real life projects and solutions.
       </HeroText>
       </Rotate>
       
@@ -51,9 +51,22 @@ function HeroSection() {
           <a href='tel:+254703605544' className='number'> <p> Tel: +254703605544 🤙 </p>
           </a>
         </div>
-    </StyledImageHolder>
-    </StyledHerobox>
+        <SocialIconsHolderFooter >
+    {Icons.map((prop) => {
+      const {link, id,icon}=prop
+      return (
+      <SocialIcon key={id}>
+        <a href={link} target="-blank"> {icon} </a>
+      </SocialIcon>
+      
+     
+      )
+    })}
     
+    </SocialIconsHolderFooter>
+    </StyledImageHolder>
+    
+    </StyledHerobox>
     <SocialIconsHolder >
     {Icons.map((prop) => {
       const {link, id,icon}=prop
@@ -67,6 +80,7 @@ function HeroSection() {
     })}
     
     </SocialIconsHolder>
+    
     </HeroMain>
   )
 }

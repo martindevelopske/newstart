@@ -2,7 +2,7 @@ import { AiOutlineCopyrightCircle } from 'react-icons/ai'
 //import { Link } from 'react-router-dom'
 import { Icons } from '../Data/IconsData'
 import { FooterHolder, StyledEnd } from '../Styled/StyledFooter'
-import { SocialIcon, SocialIconsHolder } from '../Styled/StyledSocialIcons'
+import { SocialIcon, SocialIconsHolder, SocialIconsHolderFooter } from '../Styled/StyledSocialIcons'
 //import SocialIcons from './SocialIcons'
 import Separator from './Separator'
 
@@ -11,7 +11,7 @@ function Footer(){
       <>
       <FooterHolder>
             <p>  <AiOutlineCopyrightCircle />2022 Martin inc. All rights reserved.</p>
-            <SocialIconsHolder fx="row">
+            <SocialIconsHolderFooter>
             {Icons.map((prop) => {
       const {link, id,icon}=prop
       return (
@@ -22,7 +22,7 @@ function Footer(){
      
       )
             })}
-            </SocialIconsHolder>
+            </SocialIconsHolderFooter>
             
          </FooterHolder>
          <StyledEnd>

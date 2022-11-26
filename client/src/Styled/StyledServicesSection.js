@@ -34,6 +34,7 @@ background-color: ${(p)=>p.theme.fillColor};
     heigth: auto;
     margin:8px;
     
+    
 }
 `
 
@@ -46,10 +47,19 @@ margin-top: 64px;
     flex: 0 1 40%;
     margin-left: 32px;
 } 
+@media(max-width:${p=>p.theme.tablet}){
+    & *{
+        margin-left: 8px;
+        
+    }
+}
 @media(max-width: ${(p)=>p.theme.mobile}){
+    
     width:100%;
     & *{
         flex: 0 1 80%;
+        margin-left: 20px;
+        
     }
 }
 

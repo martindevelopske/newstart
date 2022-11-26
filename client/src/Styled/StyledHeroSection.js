@@ -17,7 +17,7 @@ font-size: 1.0rem;
 color: ${(p)=>p.theme.colorPrimary};
 width: 3%;
 height: auto;
-margin-top:100px;
+margin-top:25vh;
 writing-mode: vertical-rl;
 display:flex;
 justify-content:center;
