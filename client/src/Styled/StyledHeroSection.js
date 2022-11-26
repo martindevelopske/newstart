@@ -6,7 +6,7 @@ display:flex;
 flex-direction: row;
 margin-left: 16px;
 @media (max-width: ${(p)=>p.theme.mobile}) {
-    flex-direction: column;
+    
     height: auto;
     margin-left:32px;
     
