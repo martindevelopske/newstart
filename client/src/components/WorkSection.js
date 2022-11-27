@@ -15,7 +15,7 @@ function WorkSection() {
         Check out my <div>Work</div>
     </StyledSectionHeader>
     <ServicesIntro>
-        I help businesses grow by crafting amazing websites and web experiences. If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat.
+       In my web development career, I've been fortunate to work with various clients and here are some of them:
     </ServicesIntro>
     <WorkCards>
       {WorkData.map((work)=>{

@@ -7,7 +7,7 @@ export const ServicesData=[
     {id:1,
     name: "Design",
     logo: <MdOutlineDesignServices />,
-    description: "Before the real development happens, there must be a design specified and tailored by the client to be used. I design fully responsive and user friendly websites to provide comfortabel web expiriences. "
+    description: "Before the real development happens, there must be a design specified and tailored by the client to be used. I design fully responsive and user friendly websites to provide comfortable web expiriences. "
 },
 {id:2,
     name:"Development",
