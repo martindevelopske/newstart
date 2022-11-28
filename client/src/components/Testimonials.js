@@ -14,7 +14,7 @@ function Testimonials() {
     Having worked with various, here is what some of them have to say about me.
     </ServicesIntro>
     <TestimonialsHolder>
-        {TestimonialsData.map((item)=>{
+        {TestimonialsData ? TestimonialsData.map((item)=>{
             const {image,title,review,id}=item;
             return(
                 <TestimonialCard key={id}>
@@ -28,7 +28,7 @@ function Testimonials() {
         </TestimonialCard>
         
             )
-        })}
+        }) : "To be updated"}
         
     </TestimonialsHolder>
     </TestimonialsMain>

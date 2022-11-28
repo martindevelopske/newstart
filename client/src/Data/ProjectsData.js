@@ -23,21 +23,21 @@ export const ProjectsData=[
     link:"https://blogbymatteo.netlify.app/",
     github:"https://github.com/martindevelopske/Blog"
 },
-{id:3,
-    name:"Blog",
-    img:"./images/pp.jpg",
-    stack: [
-        './logos/36/html36.png',
-        './logos/36/css36.png',
-        './logos/36/node36.png',
-        './logos/36/redux48.png',
-        './logos/36/mui48.png',
-        './logos/36/figma48.png',
+// {id:3,
+//     name:"Blog",
+//     img:"./images/pp.jpg",
+//     stack: [
+//         './logos/36/html36.png',
+//         './logos/36/css36.png',
+//         './logos/36/node36.png',
+//         './logos/36/redux48.png',
+//         './logos/36/mui48.png',
+//         './logos/36/figma48.png',
         
-    ],
-    link:"/",
-    github:"/"
-},
+//     ],
+//     link:"/",
+//     github:"/"
+// },
 // {id:4,
 //     name:"Blog",
 //     img:"./images/pp.jpg",
