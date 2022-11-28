@@ -6,8 +6,16 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  
-    <App />
+    <div className='container'>
+        <App />
+        {/* <LeftText>
+
+        </LeftText>
+        <RightNav>
+
+        </RightNav> */}
+    </div>
+    
   
 );
 

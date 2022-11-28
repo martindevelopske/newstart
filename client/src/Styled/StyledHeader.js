@@ -48,6 +48,7 @@ margin-bottom:32px;
 position: sticky;
 top:0;
 background-color: rgba(33, 32, 30, 10);
+z-index: 45;
 @media(max-width:${(p)=>p.theme.mobile}){
     justify-content:space-between;
     margin-bottom:16px;
