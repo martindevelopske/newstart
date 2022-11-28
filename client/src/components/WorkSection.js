@@ -18,7 +18,7 @@ function WorkSection() {
        In my web development career, I've been fortunate to work with various clients and here are some of them:
     </ServicesIntro>
     <WorkCards>
-      {WorkData.map((work)=>{
+      {WorkData ? WorkData.map((work)=>{
         const {image,link,name,id}=work;
         return(
           <WorkCard key={id}>
@@ -35,7 +35,7 @@ function WorkSection() {
           </a>         
         </WorkCard>
         )
-      })}
+      }) : "To be updated"}
     </WorkCards>
     </WorkMain>
   )}
