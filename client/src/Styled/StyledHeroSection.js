@@ -22,6 +22,7 @@ writing-mode: vertical-rl;
 display:flex;
 justify-content:center;
 
+
 `
 export const StyledHerobox=styled.div`
 margin-top: 64px;
@@ -44,10 +45,11 @@ align-items: center;
 }
 & li {
     margin-right: 5px;
+    
 }
 & p{
     font-size: 16px;
-    font-weight: 200px;
+    font-weight: 300;
     
 }
 & .intro{
@@ -56,9 +58,14 @@ align-items: center;
 & .separator{
     color: ${(p)=>p.theme.colorPrimary};
     font-size: 24px;
+    font-weight: 600;
 }
-& div{
-    color: ${p=>p.theme.colorPrimary}
+& .colored{
+    color: ${p=>p.theme.colorPrimary};
+    font-weight: 600;
+}
+& .text1{
+    width:80%;
 }
 
 @media(max-width: ${(p)=>p.theme.tablet}){

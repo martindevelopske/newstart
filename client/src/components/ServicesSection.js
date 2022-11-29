@@ -17,7 +17,7 @@ function ServicesSection() {
             {ServicesData.map((props)=>{
                 const {name,description,logo,id}= props;
                 return( 
-                    <Slide left>
+                    <Slide left key={id}>
                         <ServiceCard name={name} description={description} logo={logo} id={id} key={id}>
                         
                         </ServiceCard>

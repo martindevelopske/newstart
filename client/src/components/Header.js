@@ -10,13 +10,13 @@ import { SocialIcon, SocialIconsHolder } from '../Styled/StyledSocialIcons';
 
 function Header() {
   const [menu,setmenu]=useState(false);
-  const [button,setButton]=useState(<i class="fa fa-bars" aria-hidden="true"></i>)
+  const [button,setButton]=useState(<i className="fa fa-bars" aria-hidden="true"></i>)
   const handleToggle=()=>{
     if(!menu){
       setmenu(true);
-      setButton(<i class="fa fa-times" aria-hidden="true"></i>);
+      setButton(<i className="fa fa-times" aria-hidden="true"></i>);
     } else {
-      setButton(<i class="fa fa-bars" aria-hidden="true"></i>);
+      setButton(<i className="fa fa-bars" aria-hidden="true"></i>);
       setmenu(false);
       
     }
@@ -56,7 +56,7 @@ function Header() {
               
               <Link to={link.navigation} smooth={true} offset={-80} duration={600} spy={true} activeClass='active' onClick={()=>{
                 setmenu(false)
-                setButton(<i class="fa fa-bars" aria-hidden="true"></i>)
+                setButton(<i className="fa fa-bars" aria-hidden="true"></i>)
               }}>
                   <div>
                   {link.name}

@@ -13,11 +13,11 @@ function ContactSection() {
   const sendEmail=(e)=>{
     e.preventDefault();
 
-    emailjs.sendForm("service_ge6uy12", "template_erynu56",form.current,"zRkkjL78ryGhy2pvo")
+    emailjs.sendForm("service_ge6uy12", "template_egp6xzu",form.current,"zRkkjL78ryGhy2pvo")
     .then((result)=>{
       console.log(result.text);
     }, (error)=> console.log(error.text))
-    form.current.reset();
+        form.current.reset();
   }
   return (
     <ContactMain id='contact'>

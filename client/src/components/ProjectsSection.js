@@ -33,15 +33,15 @@ function ProjectsSection() {
         <StyledStackHolder>
             {item.stack.map((stack,i)=>{
               return (
-                  <StyledStackIcon src={stack} alt=''></StyledStackIcon>
+                  <StyledStackIcon src={stack} alt='' key={i}></StyledStackIcon>
                
     )})}
           </StyledStackHolder>
         <a href={item.link} target=".blank">
-        <StyledCardButton bg={p=>p.theme.colorPrimary}>Visit site<i class="fa-solid fa-up-right-from-square"></i></StyledCardButton>
+        <StyledCardButton bg={p=>p.theme.colorPrimary}>Visit site<i className="fa-solid fa-up-right-from-square"></i></StyledCardButton>
         </a>
         <a href={item.github} target=".blank">
-        <StyledCardButton bg="none" color="black"> Github <i class="fa-brands fa-github"></i></StyledCardButton>
+        <StyledCardButton bg="none" color="black"> Github <i className="fa-brands fa-github"></i></StyledCardButton>
         </a>
       </ProjectCard>
          

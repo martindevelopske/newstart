@@ -82,11 +82,12 @@ export const StyledMobileMenu=styled.div`
 width:90%;
 background-color: #21201E;
 display:none;
-margin-left:16px;
+margin-left:10px;
 margin-top:-17px;
 position:fixed;
-
+z-index:50;
 & div{
+    margin-top: 10px;
     margin-bottom:16px;
     border-bottom: 2px solid ${p=>p.theme.fillColor}
 }

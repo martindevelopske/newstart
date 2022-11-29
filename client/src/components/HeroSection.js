@@ -17,25 +17,27 @@ function HeroSection() {
       
     <StyledHerobox>
       <h1> I'm Martin Ndung'u</h1>
-      <div>
+      <div className='text'>
         <ul>
           <li> Web Designer</li>
-          <div className='separator'>/</div>
+          <p className='separator'>/</p>
           <li> Web Developer</li>
-          <div className='separator'>&</div>
+          <p className='separator'>&</p>
           <li> Digital Marketer</li>
         </ul>
       </div>
-      
-        <p className='intro'>I help businesses grow by crafting amazing websites and web experiences.
-      
+      <div className='text1'>
+      <p className='intro'>I help businesses grow by crafting amazing websites and web experiences.
+      </p>
         <p>
         This portfolio is a representation of all I have learned and accomplished as a web developer and also a computer science student.
         </p>
         <p>
-        I am currently <div>available for freelance work</div>  so If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat.
+        I am currently <p className='colored'>available for freelance work</p>  so If you’re looking for a designer and a developer that likes to get work done to your satisfaction, let’s chat.
         </p>
-         </p>
+      </div>
+       
+        
         <Link to='contact'>
         <Button child="Hire Me">
         </Button>
