@@ -36,19 +36,19 @@ export const SkillsData=[
         src: './logos/redux96.png'
     },
     {
-        id: 9,
+        id: 10,
         src: './logos/mui96.png'
     },
     {
-        id: 9,
+        id: 11,
         src: './logos/ex100.png'
     },
     {
-        id: 9,
+        id: 12,
         src: './logos/figma96.png' 
     },
     {
-        id: 9,
+        id: 13,
         src: './logos/styled.png' 
     },
 

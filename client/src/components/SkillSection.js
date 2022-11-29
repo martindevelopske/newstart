@@ -14,7 +14,7 @@ function SkillSection() {
           {SkillsData.map((skill)=>{
             const {id,src}=skill;
             return(
-              <Zoom rigth>
+              <Zoom rigth key={id}>
                 <StyledIcon key={id} src={src} alt=''></StyledIcon>
               </Zoom>
               
